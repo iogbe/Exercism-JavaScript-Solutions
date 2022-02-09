@@ -3,7 +3,6 @@
   "description": "Exercism concept exercise on numbers",
   "author": "Derk-Jan Karrenbeld <derk-jan+github@karrenbeld.info>",
   "private": true,
-  "type": "module",
   "license": "MIT",
   "repository": {
     "type": "git",
