@@ -27,10 +27,12 @@
  * @return {boolean} Whether or not you can execute a fast attack.
  */
 export function canExecuteFastAttack(knightIsAwake) {
-  throw new Error('Implement the canExecuteFastAttack function');
+  return !knightIsAwake;
+  // throw new Error('Implement the canExecuteFastAttack function');
 }
 
 /**
+ * 
  * A useful spy captures information, which they can't do if everyone's asleep.
  *
  * @param {boolean} knightIsAwake
@@ -40,6 +42,7 @@ export function canExecuteFastAttack(knightIsAwake) {
  * @returns {boolean} Whether or not you can spy on someone.
  */
 export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
+  
   throw new Error('Implement the canSpy function');
 }
 
