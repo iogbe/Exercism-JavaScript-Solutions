@@ -53,7 +53,7 @@ export function daysInBudget(budget, ratePerHour) {
 export function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
   let wholeMonths = Math.floor(numDays/22);
   let leftOverDays = numDays - wholeMonths * 22;
-  let discountMonthsCost = dayRate(ratePerHour)* wholeMonths * 22 * (1 - discount)
-  return discountMonthsCost + dayRate(ratePerHour) * leftOverDays;
+  let discountMonthsCost = dayRate(ratePerHour) * wholeMonths * 22 * (1 - discount)
+  return Math.ceil(discountMonthsCost + dayRate(ratePerHour) * leftOverDays);
   // throw new Error('Implement the priceWithMonthlyDiscount function');
 }
