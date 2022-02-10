@@ -59,7 +59,12 @@ export function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
  * @returns {boolean} Whether or not you can send a signal to the prisoner.
  */
 export function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
-  throw new Error('Implement the canSignalPrisoner function');
+  if (prisonerIsAwake && !archerIsAwake) {
+    return true;
+  } else {
+    return false;
+  }
+  // throw new Error('Implement the canSignalPrisoner function');
 }
 
 /**
